@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: linear-gradient(to right, rgba(131, 58, 180, 1) , rgba(253, 29, 29, 1));
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    padding: 0.5rem;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-group{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.form-group label{
+    margin: 0.5rem;
+    justify-content: left;
+    color: #fff;
+    font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group input, .form-group select{
+    
+    padding: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    outline: none;
+    font-size: 1rem;
+    
+}
+
+button{
+    margin: 0.5rem;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background: linear-gradient(to right, #00BCD4, #009688);
+    color: #fff;
 }
